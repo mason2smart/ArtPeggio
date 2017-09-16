@@ -25,7 +25,7 @@ public class PhotoInput {
         readAndPrintMetadata(filepath);
 ***REMOVED***
 
-    public static int[] loadPhoto(String filepath) {
+    public static int[][] loadPhoto(String filepath) {
         BufferedImage image = null;
         File f = null;
         Synthesizer midiSynth = null;
@@ -49,41 +49,41 @@ public class PhotoInput {
         byte[] pixels = ((DataBufferByte) image.getRaster().getDataBuffer()).getData();
         int width = image.getWidth();
         int height = image.getHeight();
-        int pixelsSampled = width * height;
-        int[] rgb = new int[6];
+        System.out.println(width + " " + height);
+        int pixelsSampled = 0; 
+        int[] rgbTot = new int[3];
+        int[][] rgb = new int[121][3];
         int vol = 100;
         for (int y = 0; y < height; y += (height/10)) { //y++) {
             for (int x = 0; x < width; x += (width/10)) { //x++) {
                 int clr = image.getRGB(x,y);
-                rgb[0] += (int) (clr & 0x00ff0000) >> 16;
-                rgb[1] += (int) (clr & 0x0000ff00) >> 8;
-                rgb[2] += (int) clr & 0x000000ff;
-                rgb[3] = (clr & 0x00ff0000) >> 16;
-                rgb[4] = (clr & 0x0000ff00) >> 8;
-                rgb[5] = clr & 0x000000ff;
+                rgbTot[0] += (int) (clr & 0x00ff0000) >> 16;
+                rgbTot[1] += (int) (clr & 0x0000ff00) >> 8;
+                rgbTot[2] += (int) clr & 0x000000ff;
+                rgb[pixelsSampled][0] = (clr & 0x00ff0000) >> 16;
+                rgb[pixelsSampled][1] = (clr & 0x0000ff00) >> 8;
+                rgb[pixelsSampled][2]= clr & 0x000000ff;
 
-                mChannels[0].noteOn(rgb[3]/2, vol);
-                mChannels[0].noteOn(rgb[4]/2, vol);
-                mChannels[0].noteOn(rgb[5]/2, vol);
+                mChannels[0].noteOn(rgb[pixelsSampled][0]/2, vol);
+                mChannels[0].noteOn(rgb[pixelsSampled][1]/2, vol);
+                mChannels[0].noteOn(rgb[pixelsSampled][2]/2, vol);
                 try {
                     Thread.sleep(50);
     ***REMOVED*** catch (InterruptedException e) {
-                    mChannels[0].noteOff(rgb[3]/2);
-                    mChannels[0].noteOff(rgb[4]/2);
-                    mChannels[0].noteOff(rgb[5]/2);
+                    mChannels[0].noteOff(rgb[pixelsSampled][0]/2);
+                    mChannels[0].noteOff(rgb[pixelsSampled][1]/2);
+                    mChannels[0].noteOff(rgb[pixelsSampled][2]/2);
     ***REMOVED***
-                
-                System.out.println("Rt: %d Gt: %d Bt: %d", (rgb[0]/2), (rgb[1]/2), (rgb[2]/2));
-                System.out.println("Rv: %d Gv: %d Bv: %d", (rgb[3]/2), (rgb[4]/2), (rgb[5]/2));
+                System.out.printf("Rt: %5d Gt: %5d Bt: %5d | ", (rgbTot[0]), (rgbTot[1]), (rgbTot[2]));
+                System.out.printf("Rv: %3d Gv: %3d Bv: %3d\n", (rgb[pixelsSampled][0]/2), (rgb[pixelsSampled][1]/2), (rgb[pixelsSampled][2]/2));
+                pixelsSampled++;
 ***REMOVED***
 ***REMOVED***
         assert pixelsSampled != 0;
-        rgb[0] = rgb[0]/pixelsSampled;
-        rgb[1] = rgb[1]/pixelsSampled;
-        rgb[2] = rgb[2]/pixelsSampled;
-        for (int i : rgb) {
-            System.out.println(i);
-***REMOVED***
+        rgbTot[0] = rgbTot[0]/pixelsSampled;
+        rgbTot[1] = rgbTot[1]/pixelsSampled;
+        rgbTot[2] = rgbTot[2]/pixelsSampled;
+        int total_mean = (rgbTot[0] + rgbTot[1] + rgbTot[2]) / 3;
     return rgb;
 ***REMOVED***
 
@@ -106,22 +106,6 @@ public class PhotoInput {
 ***REMOVED***
         catch (Exception e) {
             e.printStackTrace();
-***REMOVED***
-/*
-            Metadata metadata = ImageMetadataReader.readMetadata(file);
-            for (Directory directory : metadata.getDirectories()) {
-                    for (Tag tag : directory.getTags()) {
-                                System.out.format("[%s] - %s = %s",
-                                                    directory.getName(), tag.getTagName(), tag.getDescription());
-                        ***REMOVED***
-                        if (directory.hasErrors()) {
-                                    for (String error : directory.getErrors()) {
-                                                    System.err.format("ERROR: %s", error);
-                                                ***REMOVED***
-                            ***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
