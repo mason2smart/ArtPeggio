@@ -22,8 +22,8 @@ public class PhotoInput {
       AudioPermission permission = new AudioPermission("permission", "play");
       String filepath = "./drawables/ex01.jpg";
       
-      int numSamples = 50;
-      int[][] rgb = new int[121][3];
+      int numSamples = 20;
+      int[][] rgb = new int[(numSamples + 1) * (numSamples + 1)][3];
       int key = loadPhoto(filepath, rgb, numSamples);
       playMusic(rgb, key);
    ***REMOVED***
@@ -56,25 +56,24 @@ public class PhotoInput {
         //total number of pixels grabbed so far
       int pixelsSampled = 0; 
    
-      for (int y = 0; y < height; y += (height/numSamples)) { //y++) {
-         for (int x = 0; x < width; x += (width/numSamples)) { //x++) {
+      for (int y = 0; y < height; y += Math.ceil(height/numSamples)) { //y++) {
+         for (int x = 0; x < width; x += Math.ceil(width/numSamples)) { //x++) {
             int clr = image.getRGB(x,y);
-            rgbTot[0] += (int) (clr & 0x00ff0000) >> 16;
-            rgbTot[1] += (int) (clr & 0x0000ff00) >> 8;
+            rgbTot[0] += (int) ((clr & 0x00ff0000) >> 16);
+            rgbTot[1] += (int) ((clr & 0x0000ff00) >> 8);
             rgbTot[2] += (int) clr & 0x000000ff;
-            rgb[pixelsSampled][0] = (clr & 0x00ff0000) >> 16;
-            rgb[pixelsSampled][1] = (clr & 0x0000ff00) >> 8;
-            rgb[pixelsSampled][2]= clr & 0x000000ff;
+
+              rgb[pixelsSampled][1] = ((clr & 0x0000ff00) >> 8);
+            rgb[pixelsSampled][2]= (clr & 0x000000ff);
             
             System.out.printf("Loop: %d Rt: %5d Gt: %5d Bt: %5d | ", pixelsSampled,
                     (rgbTot[0]), (rgbTot[1]), (rgbTot[2]));
             System.out.printf("Rv: %3d Gv: %3d Bv: %3d\n", 
                     (rgb[pixelsSampled][0]/2), (rgb[pixelsSampled][1]/2), 
                     (rgb[pixelsSampled][2]/2));
- ***REMOVED***
-      
+            pixelsSampled++;
+ ***REMOVED***  
          
-         pixelsSampled++;
   ***REMOVED***
       assert pixelsSampled != 0;
       rgbTot[0] = rgbTot[0]/pixelsSampled;
