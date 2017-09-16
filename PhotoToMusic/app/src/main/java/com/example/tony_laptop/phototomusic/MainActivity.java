@@ -49,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent processImage = new Intent();
             }
 
-        }
+        });
     }
 }
