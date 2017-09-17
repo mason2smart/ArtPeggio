@@ -40,6 +40,10 @@ public class gui extends JFrame {
    String fileName;
    JButton runTap;
    int DemoInt;
+   String comboText;
+   JLabel selectedImg;
+   Image selectedImage;
+
 
 
 
@@ -58,8 +62,10 @@ public class gui extends JFrame {
       loadLabel.setVisible(false);
       LoadPanel.setSize(windowSize);
       Options = new JPanel();
+      selectedImg = new JLabel();
       this.setLayout(new BorderLayout(2,2));
       filePath=new JTextField();
+
 
       setlook();
 
@@ -74,13 +80,18 @@ public class gui extends JFrame {
    public void DemoSelect(){
       Demo = new JComboBox<String>();
       Options.add(Demo);
+      Demo.setFont(buttonFont.deriveFont((float)(40*FrameWidthMulti)));
       Demo.addItem("No Selection");Demo.addItem("Cat");Demo.addItem("Clown");Demo.addItem("Starry Night");
       Demo.addActionListener(new ActionListener(){
          public void actionPerformed(ActionEvent e){
+            comboText= (String) Demo.getSelectedItem();
             DemoInt = Demo.getSelectedIndex()-1;
             if(!Demo.getSelectedItem().equals("No Selection")) {
                filePath.setText((String) Demo.getSelectedItem());
+               addSelectedImg(Demo.getSelectedIndex());
             }
+            else
+               filePath.setText("No Item Selected");
          }
       });
    }
@@ -132,20 +143,37 @@ public class gui extends JFrame {
       runTap.setPreferredSize(new Dimension((int)(320*FrameWidthMulti), (int)(180*FrameHeightMulti)));
       runTap.setSize((int)(320*FrameWidthMulti), (int)(100*FrameHeightMulti));
       runTap.setFont(buttonFont.deriveFont((float) (40 * FrameWidthMulti)));//scales font size!
-      Options.add(new JSeparator());
+      //Options.add(new JSeparator());
       Options.add(runTap,BorderLayout.SOUTH);
 
       runTap.setBorder(BorderFactory.createLineBorder(Color.blue,2, false));
       runTap.addActionListener(new ActionListener() {
          @Override
          public void actionPerformed(ActionEvent e) {
-            if (filePath.getText().length()>4) {
-               runTap.setText("Loading...");
-               runSelection(filePath.getText());
-            }
 
+            if (filePath.getText().length()>4||DemoInt!=-1) {
+               runTap.setText("Loading...");
+               if (filePath.getText().equals(comboText))
+               {
+                  runSelection(DemoInt);
+               }
+               else
+                  runSelection(filePath.getText());
+            }
+            runTap.setText("Play Image");
          }});
 
+   }
+   public void addSelectedImg(int i){
+      try {
+        selectedImage= ImageIO.read(artpeggio.class.getResourceAsStream("drawables/ex0"+i+".jpg"));
+      } catch (IOException e) {
+         e.printStackTrace();
+      }
+      selectedImage=selectedImage.getScaledInstance(FrameWidth,200, selectedImage.SCALE_SMOOTH);
+      selectedImg.setIcon(new ImageIcon(selectedImage));
+      Options.validate();
+      this.pack();
    }
 
    public void initOptions() {
@@ -155,7 +183,9 @@ public class gui extends JFrame {
       Options.setBackground(Color.darkGray);
       browseBtn();
       DemoSelect();
+      Options.add(selectedImg);
       runBtn();
+
       this.add(Options);
       Options.setOpaque(true);
       Options.setVisible(true);
