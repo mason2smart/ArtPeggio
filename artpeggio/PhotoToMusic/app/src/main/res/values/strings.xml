@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PhotoToMusic</string>
+    <string name="option1">from Camera</string>
+    <string name="option2">from Gallery</string>
+    <string name="option3">from Random</string>
+    <string name="take_photo">Take picture</string>
+</resources>
