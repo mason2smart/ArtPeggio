@@ -12,6 +12,8 @@ import java.awt.Image;
 import java.io.InputStream;
 
 public class gui extends JFrame {
+   Font buttonFont;
+   Font selectedFont;
    BufferedImage[] images;
    BufferedImage logoImage=null;
    JPanel LoadPanel;
@@ -33,7 +35,8 @@ public class gui extends JFrame {
    JButton browse;
    boolean LogoisBuffered;
    JFileChooser imageSelector;
-
+   String fileName;
+   JButton runTap;
 
 
    public gui() {
@@ -51,21 +54,36 @@ public class gui extends JFrame {
       loadLabel.setVisible(false);
       LoadPanel.setSize(windowSize);
       Options = new JPanel();
-      this.setLayout(new GridLayout(2,1));
+      this.setLayout(new BorderLayout(2,2));
+      filePath=new JTextField();
+
       setlook();
 
 
       loadOptions();
-     // BufferLoading();
+   //   initLoad();
+
+
 
    ***REMOVED***
+
+
 
    public void browseBtn(){
       browse = new JButton("Browse Image");
       browse.setPreferredSize(new Dimension((int)(320*FrameWidthMulti), (int)(180*FrameHeightMulti)));
       browse.setSize((int)(320*FrameWidthMulti), (int)(180*FrameHeightMulti));
+      try {
+         buttonFont = Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("imprint.ttf"));//set font to microsoft font stored in resources
+         browse.setFont(buttonFont.deriveFont((float) (40 * FrameWidthMulti)));//scales font size!
+         selectedFont = Font.createFont(Font.TRUETYPE_FONT,getClass().getResourceAsStream("msyi.ttf"));
+  ***REMOVED*** catch (FontFormatException e) {
+         e.printStackTrace();
+  ***REMOVED*** catch (IOException e) {
+         e.printStackTrace();
+  ***REMOVED***
 
-      browse.setBorder(BorderFactory.createSoftBevelBorder(2, Color.blue,Color.black));
+      browse.setBorder(BorderFactory.createLineBorder(Color.blue,2, false));
       Options.add(browse,BorderLayout.NORTH);
             browse.addActionListener(new ActionListener() {
                @Override
@@ -75,20 +93,58 @@ public class gui extends JFrame {
                   imageSelector.setFileSelectionMode(JFileChooser.FILES_ONLY);//only allows selection of files
                   int selectV = imageSelector.showOpenDialog(null);
                   if (selectV == JFileChooser.APPROVE_OPTION) {
+                     fileName = imageSelector.getSelectedFile().getName();
                      filePath.setText(imageSelector.getSelectedFile().toString());
+      ***REMOVED***
+                  if (filePath.getText().length()>4)
+                  {
+                     browse.setText(fileName);
+                     browse.setFont(selectedFont.deriveFont((float) (60 * FrameWidthMulti)));//scales font size!
+      ***REMOVED***
+                  else
+                  {
+                     browse.setText("Browse Image");
+                     browse.setFont(buttonFont.deriveFont((float) (40 * FrameWidthMulti)));//scales font size!
       ***REMOVED***
 ***REMOVED***
    ***REMOVED***);***REMOVED***
 
+   public void runBtn(){
+      runTap = new JButton("Play Image");
+      runTap.setPreferredSize(new Dimension((int)(320*FrameWidthMulti), (int)(180*FrameHeightMulti)));
+      runTap.setSize((int)(320*FrameWidthMulti), (int)(100*FrameHeightMulti));
+      runTap.setFont(buttonFont.deriveFont((float) (40 * FrameWidthMulti)));//scales font size!
+      Options.add(new JSeparator());
+      Options.add(runTap,BorderLayout.SOUTH);
+
+      runTap.setBorder(BorderFactory.createLineBorder(Color.blue,2, false));
+      runTap.addActionListener(new ActionListener() {
+         @Override
+         public void actionPerformed(ActionEvent e) {
+            if (filePath.getText().length()>4) {
+               runTap.setText("Loading...");
+               runSelection(filePath.getText());
+***REMOVED***
+
+ ***REMOVED******REMOVED***);
+
+   ***REMOVED***
+
    public void initOptions() {
       Options.setBackground(Color.darkGray);
       Options.setSize(windowSize);
-      Options.setLayout(new FlowLayout(1,2,10));//Flow Layout
+      Options.setLayout(new GridLayout(3,2));//Flow Layout
       Options.setBackground(Color.darkGray);
       browseBtn();
+      runBtn();
       this.add(Options);
-      Options.setOpaque(false);
+      Options.setOpaque(true);
       Options.setVisible(true);
+      filePath.setMargin(new Insets(5,5,5,5));
+      filePath.setEditable(false);
+      this.add(filePath, BorderLayout.SOUTH);
+      filePath.setBackground(Color.lightGray);
+      filePath.setFont(selectedFont.deriveFont((float) (10 * FrameWidthMulti)));
       this.setVisible(true);
       this.pack();
 
@@ -111,6 +167,8 @@ public class gui extends JFrame {
    public void loadOptions(){
       logoImageLoad();
       initOptions();
+
+      BufferLoading();
    ***REMOVED***
    private BufferedImage getScaledImage(Image srcImg, int w, int h) {
       BufferedImage resized = new BufferedImage(w, h, BufferedImage.TRANSLUCENT);
@@ -125,7 +183,9 @@ public class gui extends JFrame {
    public void runSelection(int demo){
       artpeggio.loadPhoto(demo);
    ***REMOVED***
-
+   public void runSelection(String filepath){
+      artpeggio.loadPhoto(filepath);
+   ***REMOVED***
 
    public void logoImageLoad() {
       logoLabel = new JLabel();
@@ -193,13 +253,11 @@ public class gui extends JFrame {
    ***REMOVED***
 
    public void initLoad() {
-      this.setVisible(true);
       this.removeAll();
+      this.setVisible(true);
       this.add(loadLabel);
-      while (!isBuffered)//ensures the images are already buffered and stored in array ~10 second process.
-      {
-         //wait for images to be buffered
-  ***REMOVED***
+      loadLabel.setVisible(true);
+      this.pack();
       for (int i = 0; i < 64; i++) {
          loadLabel.setIcon(new ImageIcon(images[i]));
          this.pack();
@@ -211,7 +269,8 @@ public class gui extends JFrame {
  ***REMOVED***
 
   ***REMOVED***
-
+this.remove(loadLabel);
+      loadOptions();
    ***REMOVED***
 
 

@@ -37,7 +37,7 @@ public class artpeggio {
       String filepath = "artpeggio/resources/drawables/ex02.jpg";
 
 
-      loadPhoto(1);
+     // loadPhoto(1);
    ***REMOVED***
 
    public static void loadPhoto(int DemoNum) {
