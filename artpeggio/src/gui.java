@@ -10,8 +10,10 @@ import java.io.IOException;
 import java.awt.Image;
 
 import java.io.InputStream;
+import java.util.ArrayList;
 
 public class gui extends JFrame {
+   JComboBox<String> Demo;
    Font buttonFont;
    Font selectedFont;
    BufferedImage[] images;
@@ -37,6 +39,8 @@ public class gui extends JFrame {
    JFileChooser imageSelector;
    String fileName;
    JButton runTap;
+   int DemoInt;
+
 
 
    public gui() {
@@ -65,6 +69,20 @@ public class gui extends JFrame {
 
 
 
+   ***REMOVED***
+
+   public void DemoSelect(){
+      Demo = new JComboBox<String>();
+      Options.add(Demo);
+      Demo.addItem("No Selection");Demo.addItem("Cat");Demo.addItem("Clown");Demo.addItem("Starry Night");
+      Demo.addActionListener(new ActionListener(){
+         public void actionPerformed(ActionEvent e){
+            DemoInt = Demo.getSelectedIndex()-1;
+            if(!Demo.getSelectedItem().equals("No Selection")) {
+               filePath.setText((String) Demo.getSelectedItem());
+***REMOVED***
+ ***REMOVED***
+  ***REMOVED***);
    ***REMOVED***
 
 
@@ -133,9 +151,10 @@ public class gui extends JFrame {
    public void initOptions() {
       Options.setBackground(Color.darkGray);
       Options.setSize(windowSize);
-      Options.setLayout(new GridLayout(3,2));//Flow Layout
+      Options.setLayout(new GridLayout(4,1));//Flow Layout
       Options.setBackground(Color.darkGray);
       browseBtn();
+      DemoSelect();
       runBtn();
       this.add(Options);
       Options.setOpaque(true);
