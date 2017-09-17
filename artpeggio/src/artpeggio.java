@@ -5,6 +5,7 @@ import javax.imageio.ImageIO;
 import java.awt.image.DataBufferByte;
 import javax.sound.midi.*;
 import javax.sound.sampled.AudioPermission;
+import javax.swing.JFrame;
 /*
 package lib/metadata-extractor-2.10.1/com/drew/metadata;
 import com.drew.imaging.*;
@@ -12,7 +13,21 @@ import com.drew.imaging.jpeg.*;
 import com.drew.metadata.exif.*;***REMOVED***
 
 public class artpeggio {
-   public static void main(String[] args) {
+   private static gui ArtInterface;
+   public static Thread InterfaceThread;
+
+      public static void main(String[] args) {
+         InterfaceThread = new Thread() {
+             public void run()
+             {
+                ArtInterface = new gui();
+                while(true)
+                {
+
+    ***REMOVED***
+ ***REMOVED***
+ ***REMOVED***;
+
       AudioPermission permission = new AudioPermission("permission", "play");
       String filepath = "artpeggio/src/ex01.jpg";
 
