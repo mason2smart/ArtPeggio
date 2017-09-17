@@ -14,10 +14,10 @@ import com.drew.metadata.exif.*;*/
 
 public class artpeggio {
    private static gui ArtInterface;
-   public static Thread InterfaceThread;
+  // public static Thread InterfaceThread;
 
       public static void main(String[] args) {
-         InterfaceThread = new Thread() {
+     /*    InterfaceThread = new Thread() {
              public void run()
              {
                 ArtInterface = new gui();
@@ -26,10 +26,12 @@ public class artpeggio {
 
                 }
              }
-         };
-
+         };InterfaceThread.run();
+*/
+     ArtInterface = new gui();
+     ArtInterface.setVisible(true);
       AudioPermission permission = new AudioPermission("permission", "play");
-      String filepath = "artpeggio/src/ex01.jpg";
+      String filepath = "artpeggio/resources/drawables/ex02.jpg";
 
       int numSamples = 20;
       int[][] rgb = new int[(numSamples + 1) * (numSamples + 1)][3];
