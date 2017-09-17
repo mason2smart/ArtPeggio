@@ -86,7 +86,7 @@ public class gui extends JFrame {
       Demo.addActionListener(new ActionListener(){
          public void actionPerformed(ActionEvent e){
             comboText= (String) Demo.getSelectedItem();
-            DemoInt = Demo.getSelectedIndex()-1;
+            DemoInt = Demo.getSelectedIndex();
             if(!Demo.getSelectedItem().equals("No Selection")) {
                filePath.setText((String) Demo.getSelectedItem());
                addSelectedImg(Demo.getSelectedIndex());
