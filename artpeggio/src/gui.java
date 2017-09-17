@@ -2,15 +2,18 @@ import javax.swing.JFrame;
 import javax.swing.*;
 import java.awt.*;
 public class gui extends JFrame {
-   final double FrameSizeMulti = Screensize.
-final int FrameWidth=800;
-final int FrameHeight=1000*;
+   JLabel loadLabel;
+   Dimension screenSize= Toolkit.getDefaultToolkit().getScreenSize();
+   final double FrameWidthMulti = screenSize.getWidth()/1920;
+   final double FrameHeightMulti = screenSize.getHeight()/1080;
+   final int FrameWidth=(int)(800*FrameWidthMulti);
+   final int FrameHeight=(int)(1000*FrameHeightMulti);
    public gui()
    {
       JPanel LoadPanel;
       Dimension windowSize = new Dimension(FrameWidth, FrameHeight);
       this.setSize(windowSize);
-      this.ins
+      this.setResizable(false);
       setlook();
 }
    public void setlook() {
@@ -26,6 +29,18 @@ final int FrameHeight=1000*;
          e.printStackTrace();
       }
    }
+
+   public void initLoading()
+   {
+      loadLabel=new JLabel();
+      loadLabel.setLayout(new BorderLayout());
+      loadLabel.setVisible(true);
+      this.add(loadLabel);
+      
+      this.pack();
+      this.setVisible(true);
+   }
+
 
 
 }
