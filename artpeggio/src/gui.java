@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.BufferedInputStream;
+import java.io.File;
 import java.io.IOException;
 import java.awt.Image;
 
@@ -129,6 +130,7 @@ public class gui extends JFrame {
                   {
                      browse.setText(fileName);
                      browse.setFont(selectedFont.deriveFont((float) (60 * FrameWidthMulti)));//scales font size!
+                     addSelectedImg(imageSelector.getSelectedFile().toString());
                   }
                   else
                   {
@@ -175,6 +177,20 @@ public class gui extends JFrame {
       Options.validate();
       this.pack();
    }
+   public void addSelectedImg(String FilePath){
+      File f = new File(FilePath);
+      try {
+         selectedImage = ImageIO.read(f);
+      } catch (IOException e) {
+         e.printStackTrace();
+      }
+
+      selectedImage=selectedImage.getScaledInstance(FrameWidth,200, selectedImage.SCALE_SMOOTH);
+      selectedImg.setIcon(new ImageIcon(selectedImage));
+      Options.validate();
+      this.pack();
+   }
+
 
    public void initOptions() {
       Options.setBackground(Color.darkGray);
