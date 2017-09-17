@@ -233,7 +233,7 @@ public class gui extends JFrame {
       logoImageLoad();
       initOptions();
 
-      BufferLoading();
+      //BufferLoading();
    }
    private BufferedImage getScaledImage(Image srcImg, int w, int h) {
       BufferedImage resized = new BufferedImage(w, h, BufferedImage.TRANSLUCENT);
