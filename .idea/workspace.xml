@@ -20,15 +20,9 @@
       <file leaf-file-name="artpeggio.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/artpeggio/src/artpeggio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1505767164204" expanded="true" signature="3307:3314" ph="{...***REMOVED***" />
-                <marker date="1505767164204" expanded="true" signature="3371:5308" ph="{...***REMOVED***" />
-                <marker date="1505767164204" expanded="true" signature="5364:10041" ph="{...***REMOVED***" />
-                <marker date="1505767164204" expanded="true" signature="5404:5477" ph="//..." />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -36,15 +30,15 @@
       <file leaf-file-name="gui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/artpeggio/src/gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="62" column="115" lean-forward="false" selection-start-line="62" selection-start-column="115" selection-end-line="62" selection-end-column="115" />
+            <state relative-caret-position="357">
+              <caret line="175" column="16" lean-forward="false" selection-start-line="175" selection-start-column="16" selection-end-line="175" selection-end-column="16" />
               <folding>
                 <element signature="e#1607#2073#0" expanded="true" />
                 <element signature="e#2072#2073#0" expanded="true" />
-                <element signature="e#10271#11335#0" expanded="true" />
-                <element signature="e#10359#10552#0" expanded="true" />
-                <element signature="e#10551#10552#0" expanded="true" />
-                <element signature="e#11334#11335#0" expanded="true" />
+                <element signature="e#10199#11263#0" expanded="true" />
+                <element signature="e#10287#10480#0" expanded="true" />
+                <element signature="e#10479#10480#0" expanded="true" />
+                <element signature="e#11262#11263#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -346,12 +340,12 @@
       <workItem from="1505646521436" duration="1517000" />
       <workItem from="1505652071579" duration="5607000" />
       <workItem from="1505718718275" duration="28000" />
-      <workItem from="1505767182721" duration="1229000" />
+      <workItem from="1505767182721" duration="1336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45492000" />
+    <option name="totallyTimeSpent" value="45599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -404,13 +398,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1505767164204" expanded="true" signature="3307:3314" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="3371:5308" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5364:10041" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5404:5477" ph="//..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -445,10 +433,10 @@
           <folding>
             <element signature="e#1607#2073#0" expanded="true" />
             <element signature="e#2072#2073#0" expanded="true" />
-            <element signature="e#10271#11335#0" expanded="true" />
-            <element signature="e#10359#10552#0" expanded="true" />
-            <element signature="e#10551#10552#0" expanded="true" />
-            <element signature="e#11334#11335#0" expanded="true" />
+            <element signature="e#10199#11263#0" expanded="true" />
+            <element signature="e#10287#10480#0" expanded="true" />
+            <element signature="e#10479#10480#0" expanded="true" />
+            <element signature="e#11262#11263#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -457,13 +445,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1505767164204" expanded="true" signature="3307:3314" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="3371:5308" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5364:10041" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5404:5477" ph="//..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -498,10 +480,10 @@
           <folding>
             <element signature="e#1607#2073#0" expanded="true" />
             <element signature="e#2072#2073#0" expanded="true" />
-            <element signature="e#10271#11335#0" expanded="true" />
-            <element signature="e#10359#10552#0" expanded="true" />
-            <element signature="e#10551#10552#0" expanded="true" />
-            <element signature="e#11334#11335#0" expanded="true" />
+            <element signature="e#10199#11263#0" expanded="true" />
+            <element signature="e#10287#10480#0" expanded="true" />
+            <element signature="e#10479#10480#0" expanded="true" />
+            <element signature="e#11262#11263#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -510,13 +492,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1505767164204" expanded="true" signature="3307:3314" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="3371:5308" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5364:10041" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5404:5477" ph="//..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -551,10 +527,10 @@
           <folding>
             <element signature="e#1607#2073#0" expanded="true" />
             <element signature="e#2072#2073#0" expanded="true" />
-            <element signature="e#10271#11335#0" expanded="true" />
-            <element signature="e#10359#10552#0" expanded="true" />
-            <element signature="e#10551#10552#0" expanded="true" />
-            <element signature="e#11334#11335#0" expanded="true" />
+            <element signature="e#10199#11263#0" expanded="true" />
+            <element signature="e#10287#10480#0" expanded="true" />
+            <element signature="e#10479#10480#0" expanded="true" />
+            <element signature="e#11262#11263#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -563,13 +539,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1836">
           <caret line="115" column="33" lean-forward="false" selection-start-line="114" selection-start-column="8" selection-end-line="115" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1505767164204" expanded="true" signature="3307:3314" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="3371:5308" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5364:10041" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5404:5477" ph="//..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -604,10 +574,10 @@
           <folding>
             <element signature="e#1607#2073#0" expanded="true" />
             <element signature="e#2072#2073#0" expanded="true" />
-            <element signature="e#10271#11335#0" expanded="true" />
-            <element signature="e#10359#10552#0" expanded="true" />
-            <element signature="e#10551#10552#0" expanded="true" />
-            <element signature="e#11334#11335#0" expanded="true" />
+            <element signature="e#10199#11263#0" expanded="true" />
+            <element signature="e#10287#10480#0" expanded="true" />
+            <element signature="e#10479#10480#0" expanded="true" />
+            <element signature="e#11262#11263#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -616,13 +586,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1505767164204" expanded="true" signature="3307:3314" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="3371:5308" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5364:10041" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5404:5477" ph="//..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -633,10 +597,10 @@
           <folding>
             <element signature="e#1607#2073#0" expanded="true" />
             <element signature="e#2072#2073#0" expanded="true" />
-            <element signature="e#10271#11335#0" expanded="true" />
-            <element signature="e#10359#10552#0" expanded="true" />
-            <element signature="e#10551#10552#0" expanded="true" />
-            <element signature="e#11334#11335#0" expanded="true" />
+            <element signature="e#10199#11263#0" expanded="true" />
+            <element signature="e#10287#10480#0" expanded="true" />
+            <element signature="e#10479#10480#0" expanded="true" />
+            <element signature="e#11262#11263#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -645,13 +609,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1505767164204" expanded="true" signature="3307:3314" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="3371:5308" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5364:10041" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5404:5477" ph="//..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -662,10 +620,10 @@
           <folding>
             <element signature="e#1607#2073#0" expanded="true" />
             <element signature="e#2072#2073#0" expanded="true" />
-            <element signature="e#10271#11335#0" expanded="true" />
-            <element signature="e#10359#10552#0" expanded="true" />
-            <element signature="e#10551#10552#0" expanded="true" />
-            <element signature="e#11334#11335#0" expanded="true" />
+            <element signature="e#10199#11263#0" expanded="true" />
+            <element signature="e#10287#10480#0" expanded="true" />
+            <element signature="e#10479#10480#0" expanded="true" />
+            <element signature="e#11262#11263#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -714,29 +672,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/artpeggio/src/artpeggio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1505767164204" expanded="true" signature="3307:3314" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="3371:5308" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5364:10041" ph="{...***REMOVED***" />
-            <marker date="1505767164204" expanded="true" signature="5404:5477" ph="//..." />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/artpeggio/src/gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="62" column="115" lean-forward="false" selection-start-line="62" selection-start-column="115" selection-end-line="62" selection-end-column="115" />
+        <state relative-caret-position="357">
+          <caret line="175" column="16" lean-forward="false" selection-start-line="175" selection-start-column="16" selection-end-line="175" selection-end-column="16" />
           <folding>
             <element signature="e#1607#2073#0" expanded="true" />
             <element signature="e#2072#2073#0" expanded="true" />
-            <element signature="e#10271#11335#0" expanded="true" />
-            <element signature="e#10359#10552#0" expanded="true" />
-            <element signature="e#10551#10552#0" expanded="true" />
-            <element signature="e#11334#11335#0" expanded="true" />
+            <element signature="e#10199#11263#0" expanded="true" />
+            <element signature="e#10287#10480#0" expanded="true" />
+            <element signature="e#10479#10480#0" expanded="true" />
+            <element signature="e#11262#11263#0" expanded="true" />
           </folding>
         </state>
       </provider>
