@@ -41,7 +41,6 @@ public class artpeggio {
 ***REMOVED***
  ***REMOVED***);
           musical = new musicPlayer();
-            ArtInterface = new gui();
          ArtInterface.setVisible(true);
       AudioPermission permission = new AudioPermission("permission", "play");
       String filepath = "artpeggio/resources/drawables/ex02.jpg";
@@ -118,7 +117,12 @@ public class artpeggio {
          musical.cancel(true);
          System.out.println("canceled musical");
   ***REMOVED***
-            musical = new musicPlayer();
+      try {
+         Thread.sleep(300);
+  ***REMOVED*** catch (InterruptedException e) {
+         e.printStackTrace();
+  ***REMOVED***
+      musical = new musicPlayer();
          musical.execute();
    ***REMOVED***
 
@@ -189,6 +193,11 @@ public class artpeggio {
 
    if(musical.isDone()==false)
       musical.cancel(true);
+      try {
+         Thread.sleep(300);
+  ***REMOVED*** catch (InterruptedException e) {
+         e.printStackTrace();
+  ***REMOVED***
       musical = new musicPlayer();
       musical.execute();
    ***REMOVED***
