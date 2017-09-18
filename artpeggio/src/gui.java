@@ -174,6 +174,10 @@ public class gui extends JFrame {
                {
                   runSelection(DemoInt);
    ***REMOVED***
+               else
+               {
+                  runSelection(filePath.getText());
+   ***REMOVED***
 ***REMOVED***
             runTap.setText("Play Image");
  ***REMOVED******REMOVED***);
