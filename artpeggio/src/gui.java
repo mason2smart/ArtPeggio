@@ -4,6 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.awt.image.BufferedImage;
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -51,7 +54,18 @@ public class gui extends JFrame {
    public gui() {
       super("artPeggio");
       images = new BufferedImage[64];
-      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+      WindowListener exitListener = new WindowAdapter() {
+         public void windowClosing(WindowEvent e) {
+            int confirm = JOptionPane.showOptionDialog(
+               null, "Are You Sure You Wish To Quit?",
+               "Exit Now?", JOptionPane.YES_NO_OPTION,
+               JOptionPane.QUESTION_MESSAGE, new ImageIcon(getClass().getResource("intro/logoThumbLoopedTransparent.gif")), null, null);
+            if (confirm == 0) {
+               System.exit(0);
+
+***REMOVED***
+ ***REMOVED******REMOVED***;this.addWindowListener(exitListener);
       windowSize= new Dimension(FrameWidth, FrameHeight);
       this.setSize(windowSize);
       this.setPreferredSize(windowSize);
@@ -77,6 +91,7 @@ public class gui extends JFrame {
 
 
    ***REMOVED***
+
 
    public void DemoSelect(){
       Demo = new JComboBox<String>();
