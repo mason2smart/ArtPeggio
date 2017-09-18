@@ -104,7 +104,7 @@ public class gui extends JFrame {
       browse.setPreferredSize(new Dimension((int)(320*FrameWidthMulti), (int)(180*FrameHeightMulti)));
       browse.setSize((int)(320*FrameWidthMulti), (int)(180*FrameHeightMulti));
       try {
-         buttonFont = Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("imprint.ttf"));//set font to microsoft font stored in resources
+         buttonFont = Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("Imprint.ttf"));//set font to microsoft font stored in resources
          browse.setFont(buttonFont.deriveFont((float) (40 * FrameWidthMulti)));//scales font size!
          selectedFont = Font.createFont(Font.TRUETYPE_FONT,getClass().getResourceAsStream("msyi.ttf"));
   ***REMOVED*** catch (FontFormatException e) {

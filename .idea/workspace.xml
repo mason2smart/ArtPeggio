@@ -20,7 +20,7 @@
       <file leaf-file-name="artpeggio.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/artpeggio/src/artpeggio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="986">
               <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -32,12 +32,10 @@
       <file leaf-file-name="gui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/artpeggio/src/gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="88" column="45" lean-forward="false" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
+            <state relative-caret-position="725">
+              <caret line="106" column="91" lean-forward="false" selection-start-line="106" selection-start-column="91" selection-end-line="106" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8495#8496#0" expanded="true" />
-                <element signature="e#8533#8534#0" expanded="true" />
                 <element signature="e#9608#10672#0" expanded="true" />
                 <element signature="e#9696#9889#0" expanded="true" />
                 <element signature="e#9888#9889#0" expanded="true" />
@@ -127,9 +125,9 @@
     </treeState>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="381" />
-    <option name="y" value="176" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-81" />
+    <option name="y" value="252" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -148,8 +146,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="artpeggio" type="cbb8eebc:String" user="artpeggio" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,17 +180,8 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="artpeggio" type="cbb8eebc:String" user="artpeggio" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,42 +339,43 @@
       <workItem from="1505611146173" duration="32900000" />
       <workItem from="1505646521436" duration="1517000" />
       <workItem from="1505652071579" duration="5607000" />
+      <workItem from="1505718718275" duration="28000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44235000" />
+    <option name="totallyTimeSpent" value="44263000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="381" y="176" width="974" height="1087" extended-state="1" />
+    <frame x="-81" y="252" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.321875" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33123028" sideWeight="0.5032022" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.4967978" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.4967978" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24070022" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24617068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39852786" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.321875" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -394,6 +393,54 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/artpeggio/src/artpeggio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/DefaultButtonModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3706">
+          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/AbstractButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39899">
+          <caret line="2347" column="0" lean-forward="false" selection-start-line="2347" selection-start-column="0" selection-end-line="2347" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/plaf/basic/BasicButtonListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4369">
+          <caret line="291" column="35" lean-forward="false" selection-start-line="291" selection-start-column="35" selection-end-line="292" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artpeggio/src/gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="88" column="45" lean-forward="false" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9608#10672#0" expanded="true" />
+            <element signature="e#9696#9889#0" expanded="true" />
+            <element signature="e#9888#9889#0" expanded="true" />
+            <element signature="e#10671#10672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/artpeggio/src/artpeggio.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -434,8 +481,6 @@
           <caret line="275" column="38" lean-forward="true" selection-start-line="275" selection-start-column="38" selection-end-line="275" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8495#8496#0" expanded="true" />
-            <element signature="e#8533#8534#0" expanded="true" />
             <element signature="e#9608#10672#0" expanded="true" />
             <element signature="e#9696#9889#0" expanded="true" />
             <element signature="e#9888#9889#0" expanded="true" />
@@ -484,8 +529,6 @@
           <caret line="180" column="34" lean-forward="true" selection-start-line="180" selection-start-column="34" selection-end-line="180" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8495#8496#0" expanded="true" />
-            <element signature="e#8533#8534#0" expanded="true" />
             <element signature="e#9608#10672#0" expanded="true" />
             <element signature="e#9696#9889#0" expanded="true" />
             <element signature="e#9888#9889#0" expanded="true" />
@@ -510,8 +553,6 @@
           <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8495#8496#0" expanded="true" />
-            <element signature="e#8533#8534#0" expanded="true" />
             <element signature="e#9608#10672#0" expanded="true" />
             <element signature="e#9696#9889#0" expanded="true" />
             <element signature="e#9888#9889#0" expanded="true" />
@@ -536,8 +577,6 @@
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8495#8496#0" expanded="true" />
-            <element signature="e#8533#8534#0" expanded="true" />
             <element signature="e#9608#10672#0" expanded="true" />
             <element signature="e#9696#9889#0" expanded="true" />
             <element signature="e#9888#9889#0" expanded="true" />
@@ -590,7 +629,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/artpeggio/src/artpeggio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="986">
           <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -600,12 +639,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/artpeggio/src/gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="88" column="45" lean-forward="false" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
+        <state relative-caret-position="725">
+          <caret line="106" column="91" lean-forward="false" selection-start-line="106" selection-start-column="91" selection-end-line="106" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8495#8496#0" expanded="true" />
-            <element signature="e#8533#8534#0" expanded="true" />
             <element signature="e#9608#10672#0" expanded="true" />
             <element signature="e#9696#9889#0" expanded="true" />
             <element signature="e#9888#9889#0" expanded="true" />
