@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
  * Instrumentation test, which will execute on an Android device.
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
- ***REMOVED***
+ */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
     @Test
@@ -22,5 +22,5 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("com.example.tony_laptop.phototomusic", appContext.getPackageName());
-***REMOVED***
-***REMOVED***
+    }
+}
