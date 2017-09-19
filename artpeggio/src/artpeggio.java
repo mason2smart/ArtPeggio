@@ -41,7 +41,6 @@ public class artpeggio {
             }
          });
           musical = new musicPlayer();
-         ArtInterface.setVisible(true);
       AudioPermission permission = new AudioPermission("permission", "play");
       String filepath = "artpeggio/resources/drawables/ex02.jpg";
 
