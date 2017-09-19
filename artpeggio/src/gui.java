@@ -67,6 +67,7 @@ public class gui extends JFrame {
 ***REMOVED***
  ***REMOVED******REMOVED***;this.addWindowListener(exitListener);
       windowSize= new Dimension(FrameWidth, FrameHeight);
+      DemoInt=-1;
       this.setSize(windowSize);
       this.setPreferredSize(windowSize);
       this.setResizable(false);
@@ -168,16 +169,22 @@ public class gui extends JFrame {
          @Override
          public void actionPerformed(ActionEvent e) {
 
-            if (filePath.getText().length()>4||DemoInt!=-1) {
+            if (filePath.getText().length()>4||(DemoInt!=-1)) {
                runTap.setText("Loading...");
-               if (filePath.getText().equals(comboText))
+               if (filePath.getText().equals(comboText)&&!comboText.equals("No Selection"))
                {
                   runSelection(DemoInt);
    ***REMOVED***
-               else
+               else if(!filePath.getText().equals(null)&&!filePath.getText().equals(" ")&&!filePath.getText().equals("No Selection"))
                {
+                  System.out.println(filePath.getText());
                   runSelection(filePath.getText());
    ***REMOVED***
+***REMOVED***
+            try {
+               Thread.sleep(500);
+***REMOVED*** catch (InterruptedException e1) {
+               e1.printStackTrace();
 ***REMOVED***
             runTap.setText("Play Image");
  ***REMOVED******REMOVED***);
