@@ -12,7 +12,7 @@ import javax.swing.SwingWorker;
 package lib/metadata-extractor-2.10.1/com/drew/metadata;
 import com.drew.imaging.*;
 import com.drew.imaging.jpeg.*;
-import com.drew.metadata.exif.*;*/
+import com.drew.metadata.exif.*;***REMOVED***
 
 public class artpeggio {
    private static int key;
@@ -31,51 +31,51 @@ public class artpeggio {
                 while(true)
                 {
 
-                }
-             }
-         };InterfaceThread.run();
-*/javax.swing.SwingUtilities.invokeLater(new Runnable() {
+    ***REMOVED***
+ ***REMOVED***
+ ***REMOVED***;InterfaceThread.run();
+***REMOVED***javax.swing.SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
                gui aGui = new gui();
-            }
-         });
+***REMOVED***
+ ***REMOVED***);
           musical = new musicPlayer();
       AudioPermission permission = new AudioPermission("permission", "play");
       String filepath = "artpeggio/resources/drawables/ex02.jpg";
 
 
      // loadPhoto(1);
-   }
+   ***REMOVED***
    public static int getKey()
    {
       return key;
-   }
+   ***REMOVED***
    public static int[][] getRgb(){
          return rgb;
-   }
+   ***REMOVED***
    public static void loadPhoto(int DemoNum) {
       BufferedImage image = null;
       switch (DemoNum) {
          case 1: imgPath="ex01.jpg";
-               break;
+   ***REMOVED***
          case 2: imgPath="ex02.jpg";
-               break;
+   ***REMOVED***
          case 3: imgPath="ex03.jpg";
-               break;
-      }
+   ***REMOVED***
+  ***REMOVED***
       try {
          image = ImageIO.read(artpeggio.class.getResourceAsStream("drawables/"+imgPath));
-      } catch (IOException e) {
+  ***REMOVED*** catch (IOException e) {
          e.printStackTrace();
-      }
+  ***REMOVED***
       //array for pixels
       try {
          byte[] pixels = ((DataBufferByte) image.getRaster().getDataBuffer()).getData();
-      }catch (Exception e)
+  ***REMOVED***catch (Exception e)
       {
          e.printStackTrace();
-      }
+  ***REMOVED***
       //image width and height
       int width = image.getWidth();
       int height = image.getHeight();
@@ -102,9 +102,9 @@ public class artpeggio {
                (rgb[pixelsSampled][0]/2), (rgb[pixelsSampled][1]/2),
                (rgb[pixelsSampled][2]/2));
             pixelsSampled++;
-         }
+ ***REMOVED***
 
-      }
+  ***REMOVED***
       assert pixelsSampled != 0;
       rgbTot[0] = rgbTot[0]/pixelsSampled;
       rgbTot[1] = rgbTot[1]/pixelsSampled;
@@ -115,15 +115,15 @@ public class artpeggio {
       if(!musical.isDone()) {
          musical.cancel(true);
          System.out.println("canceled musical");
-      }
+  ***REMOVED***
       try {
          Thread.sleep(300);
-      } catch (InterruptedException e) {
+  ***REMOVED*** catch (InterruptedException e) {
          e.printStackTrace();
-      }
+  ***REMOVED***
       musical = new musicPlayer();
          musical.execute();
-   }
+   ***REMOVED***
 
 
 
@@ -138,22 +138,22 @@ public class artpeggio {
       try {
          f = new File(filepath);
          image = ImageIO.read(f);
-      }
+  ***REMOVED***
       catch (IOException e) {
          System.out.println(e);
-      }
+  ***REMOVED***
       catch (Exception e) {
          System.out.println(e);
-      }
+  ***REMOVED***
 
 
       //array for pixels
       try {
          byte[] pixels = ((DataBufferByte) image.getRaster().getDataBuffer()).getData();
-      }catch (Exception e)
+  ***REMOVED***catch (Exception e)
       {
          e.printStackTrace();
-      }
+  ***REMOVED***
       //image width and height
       int width = image.getWidth();
       int height = image.getHeight();
@@ -180,9 +180,9 @@ public class artpeggio {
                (rgb[pixelsSampled][0]/2), (rgb[pixelsSampled][1]/2),
                (rgb[pixelsSampled][2]/2));
             pixelsSampled++;
-         }
+ ***REMOVED***
 
-      }
+  ***REMOVED***
       assert pixelsSampled != 0;
       rgbTot[0] = rgbTot[0]/pixelsSampled;
       rgbTot[1] = rgbTot[1]/pixelsSampled;
@@ -194,12 +194,12 @@ public class artpeggio {
       musical.cancel(true);
       try {
          Thread.sleep(300);
-      } catch (InterruptedException e) {
+  ***REMOVED*** catch (InterruptedException e) {
          e.printStackTrace();
-      }
+  ***REMOVED***
       musical = new musicPlayer();
       musical.execute();
-   }
+   ***REMOVED***
 
 
-}
+***REMOVED***

@@ -8,7 +8,7 @@ public class musicPlayer extends SwingWorker<Void,String> {
 int key;
 int rgb[][];
    public musicPlayer() {
-   }
+   ***REMOVED***
 
    /**
     * Computes a result, or throws an exception if unable to do so.
@@ -21,7 +21,7 @@ int rgb[][];
     *
     * @return the computed result
     * @throws Exception if unable to compute a result
-    */
+    ***REMOVED***
    @Override
    protected Void doInBackground() {
       this.key=artpeggio.getKey();
@@ -45,10 +45,10 @@ int rgb[][];
       try {
          midiSynth = MidiSystem.getSynthesizer();
          midiSynth.open();
-      }
+  ***REMOVED***
       catch (Exception e) {
          System.out.println(e);
-      }
+  ***REMOVED***
       //get instruments and channels, load the default instrument
       Instrument[] instr = midiSynth.getDefaultSoundbank().getInstruments();
       MidiChannel[] mChannels = midiSynth.getChannels();
@@ -68,21 +68,21 @@ int rgb[][];
                mChannels[1].noteOn(FOUR, volChord);
                mChannels[1].noteOn(SEVEN, volChord);
                chordCounter++;
-               break;
+   ***REMOVED***
             case 2:
 
                mChannels[1].noteOn(NEG_ONE, volChord);
                mChannels[1].noteOn(TWO, volChord);
                mChannels[1].noteOn(SEVEN, volChord);
                chordCounter++;
-               break;
+   ***REMOVED***
             case 3:
 
                mChannels[1].noteOn(ZERO, volChord);
                mChannels[1].noteOn(FOUR, volChord);
                mChannels[1].noteOn(NINE, volChord);
                chordCounter++;
-               break;
+   ***REMOVED***
 
             case 4:
 
@@ -90,10 +90,10 @@ int rgb[][];
                mChannels[1].noteOn(FIVE, volChord);
                mChannels[1].noteOn(NINE, volChord);
                chordCounter++;
-               break;
-            default:
+   ***REMOVED***
+        ***REMOVED***
                ;
-         }*/
+ ***REMOVED******REMOVED***
 
          System.out.println("Now for the notes");
 
@@ -103,55 +103,55 @@ int rgb[][];
             System.out.println(rgb[r][c]/2 + "r: " + r);
             try {
                Thread.sleep(QUARTER);
-            }
+***REMOVED***
             catch (InterruptedException e) {
                mChannels[0].noteOff(rgb[r][c]/2);
-            }
-         }
+***REMOVED***
+ ***REMOVED***
 
 
          for (int c = 0; c < 3; c++) {
             mChannels[0].noteOff(rgb[r][c]/2);
-         }
+ ***REMOVED***
          if (this.isCancelled())
          {
-            break;
-         }
+***REMOVED***
+ ***REMOVED***
          /*
          mChannels[0].noteOn(rgb[r][0]/2, vol);
          try {
             Thread.sleep(QUARTER);
-         }
+ ***REMOVED***
          catch (InterruptedException e) {
             mChannels[0].noteOff(rgb[r][0]/2);
-         }
+ ***REMOVED***
 
                 //SECOND NOTE
          mChannels[0].noteOn(rgb[r][1]/2, vol);
          try {
             Thread.sleep(QUARTER);
-         }
+ ***REMOVED***
          catch (InterruptedException e) {
             mChannels[0].noteOff(rgb[r][1]/2);
-         }
+ ***REMOVED***
 
                 //THIRD NOTE
          mChannels[0].noteOn(rgb[r][2]/2, vol);
          try {
             Thread.sleep(QUARTER);
-         }
+ ***REMOVED***
          catch (InterruptedException e) {
             mChannels[0].noteOff(rgb[r][2]/2);
-         }
+ ***REMOVED***
 
                 //FIRST NOTE
          mChannels[0].noteOn(rgb[r][0]/2, vol);
          try {
             Thread.sleep(QUARTER);
-         }
+ ***REMOVED***
          catch (InterruptedException e) {
             mChannels[0].noteOff(rgb[r][0]/2);
-         }*/
+ ***REMOVED******REMOVED***
 
          /*       //turn off all previous notes
          switch (chordCounter) {
@@ -160,21 +160,21 @@ int rgb[][];
                mChannels[0].noteOff(FOUR);
                mChannels[0].noteOff(SEVEN);
                chordCounter++;
-               break;
+   ***REMOVED***
             case 2:
 
                mChannels[0].noteOff(NEG_ONE);
                mChannels[0].noteOff(TWO);
                mChannels[0].noteOff(SEVEN);
                chordCounter++;
-               break;
+   ***REMOVED***
             case 3:
 
                mChannels[0].noteOff(ZERO);
                mChannels[0].noteOff(FOUR);
                mChannels[0].noteOff(NINE);
                chordCounter++;
-               break;
+   ***REMOVED***
 
             case 4:
 
@@ -182,18 +182,18 @@ int rgb[][];
                mChannels[0].noteOff(FIVE);
                mChannels[0].noteOff(NINE);
                chordCounter++;
-               break;
-            default:
+   ***REMOVED***
+        ***REMOVED***
                ;
-         }
+ ***REMOVED***
                 //rotate the counter: chordCounter == 4 ? = 1 : ++
          if (chordCounter == 4) {
             chordCounter = 1;
-         }
+ ***REMOVED***
          else {
             chordCounter++;
-         }*/
-   }
+ ***REMOVED******REMOVED***
+   ***REMOVED***
 
    /**
     * When an object implementing interface <code>Runnable</code> is used
@@ -205,7 +205,7 @@ int rgb[][];
     * take any action whatsoever.
     *
     * @see Thread#run()
-    */
+    ***REMOVED***
    return null;
-   }
-   }
+   ***REMOVED***
+   ***REMOVED***

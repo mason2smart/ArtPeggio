@@ -64,8 +64,8 @@ public class gui extends JFrame {
             if (confirm == 0) {
                System.exit(0);
 
-            }
-         }};this.addWindowListener(exitListener);
+***REMOVED***
+ ***REMOVED******REMOVED***;this.addWindowListener(exitListener);
       windowSize= new Dimension(FrameWidth, FrameHeight);
       DemoInt=-1;
       this.setSize(windowSize);
@@ -91,7 +91,7 @@ public class gui extends JFrame {
 
 
 
-   }
+   ***REMOVED***
 
 
    public void DemoSelect(){
@@ -106,12 +106,12 @@ public class gui extends JFrame {
             if(!Demo.getSelectedItem().equals("No Selection")) {
                filePath.setText((String) Demo.getSelectedItem());
                addSelectedImg(Demo.getSelectedIndex());
-            }
+***REMOVED***
             else
                filePath.setText("No Item Selected");
-         }
-      });
-   }
+ ***REMOVED***
+  ***REMOVED***);
+   ***REMOVED***
 
 
 
@@ -123,11 +123,11 @@ public class gui extends JFrame {
          buttonFont = Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("Imprint.ttf"));//set font to microsoft font stored in resources
          browse.setFont(buttonFont.deriveFont((float) (40 * FrameWidthMulti)));//scales font size!
          selectedFont = Font.createFont(Font.TRUETYPE_FONT,getClass().getResourceAsStream("msyi.ttf"));
-      } catch (FontFormatException e) {
+  ***REMOVED*** catch (FontFormatException e) {
          e.printStackTrace();
-      } catch (IOException e) {
+  ***REMOVED*** catch (IOException e) {
          e.printStackTrace();
-      }
+  ***REMOVED***
 
       browse.setBorder(BorderFactory.createLineBorder(Color.blue,2, false));
       Options.add(browse,BorderLayout.NORTH);
@@ -141,20 +141,20 @@ public class gui extends JFrame {
                   if (selectV == JFileChooser.APPROVE_OPTION) {
                      fileName = imageSelector.getSelectedFile().getName();
                      filePath.setText(imageSelector.getSelectedFile().toString());
-                  }
+      ***REMOVED***
                   if (filePath.getText().length()>4)
                   {
                      browse.setText(fileName);
                      browse.setFont(selectedFont.deriveFont((float) (60 * FrameWidthMulti)));//scales font size!
                      addSelectedImg(imageSelector.getSelectedFile().toString());
-                  }
+      ***REMOVED***
                   else
                   {
                      browse.setText("Browse Image");
                      browse.setFont(buttonFont.deriveFont((float) (40 * FrameWidthMulti)));//scales font size!
-                  }
-            }
-   });}
+      ***REMOVED***
+***REMOVED***
+   ***REMOVED***);***REMOVED***
 
    public void runBtn(){
       runTap = new JButton("Play Image");
@@ -174,46 +174,46 @@ public class gui extends JFrame {
                if (filePath.getText().equals(comboText)&&!comboText.equals("No Selection"))
                {
                   runSelection(DemoInt);
-               }
+   ***REMOVED***
                else if(!filePath.getText().equals(null)&&!filePath.getText().equals(" ")&&!filePath.getText().equals("No Selection"))
                {
                   System.out.println(filePath.getText());
                   runSelection(filePath.getText());
-               }
-            }
+   ***REMOVED***
+***REMOVED***
             try {
                Thread.sleep(500);
-            } catch (InterruptedException e1) {
+***REMOVED*** catch (InterruptedException e1) {
                e1.printStackTrace();
-            }
+***REMOVED***
             runTap.setText("Play Image");
-         }});
+ ***REMOVED******REMOVED***);
 
-   }
+   ***REMOVED***
    public void addSelectedImg(int i){
       try {
         selectedImage= ImageIO.read(artpeggio.class.getResourceAsStream("drawables/ex0"+i+".jpg"));
-      } catch (IOException e) {
+  ***REMOVED*** catch (IOException e) {
          e.printStackTrace();
-      }
+  ***REMOVED***
       selectedImage=selectedImage.getScaledInstance(FrameWidth,200, selectedImage.SCALE_SMOOTH);
       selectedImg.setIcon(new ImageIcon(selectedImage));
       Options.validate();
       this.pack();
-   }
+   ***REMOVED***
    public void addSelectedImg(String FilePath){
       File f = new File(FilePath);
       try {
          selectedImage = ImageIO.read(f);
-      } catch (IOException e) {
+  ***REMOVED*** catch (IOException e) {
          e.printStackTrace();
-      }
+  ***REMOVED***
 
       selectedImage=selectedImage.getScaledInstance(FrameWidth,200, selectedImage.SCALE_SMOOTH);
       selectedImg.setIcon(new ImageIcon(selectedImage));
       Options.validate();
       this.pack();
-   }
+   ***REMOVED***
 
 
    public void initOptions() {
@@ -237,28 +237,28 @@ public class gui extends JFrame {
       this.setVisible(true);
       this.pack();
 
-   }
+   ***REMOVED***
 
 
    public void setlook() {
       try {
          UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-      } catch (ClassNotFoundException e) {
+  ***REMOVED*** catch (ClassNotFoundException e) {
          e.printStackTrace();
-      } catch (InstantiationException e) {
+  ***REMOVED*** catch (InstantiationException e) {
          e.printStackTrace();
-      } catch (IllegalAccessException e) {
+  ***REMOVED*** catch (IllegalAccessException e) {
          e.printStackTrace();
-      } catch (UnsupportedLookAndFeelException e) {
+  ***REMOVED*** catch (UnsupportedLookAndFeelException e) {
          e.printStackTrace();
-      }
-   }
+  ***REMOVED***
+   ***REMOVED***
    public void loadOptions(){
       logoImageLoad();
       initOptions();
 
       //BufferLoading();
-   }
+   ***REMOVED***
    private BufferedImage getScaledImage(Image srcImg, int w, int h) {
       BufferedImage resized = new BufferedImage(w, h, BufferedImage.TRANSLUCENT);
       Graphics2D g2 = resized.createGraphics();
@@ -266,15 +266,15 @@ public class gui extends JFrame {
       g2.drawImage(srcImg, 0, 0, w, h, null);
       g2.dispose();
       return resized;
-   }
+   ***REMOVED***
 
 
    public void runSelection(int demo){
       artpeggio.loadPhoto(demo);
-   }
+   ***REMOVED***
    public void runSelection(String filepath){
       artpeggio.loadPhoto(filepath);
-   }
+   ***REMOVED***
 
    public void logoImageLoad() {
       logoLabel = new JLabel();
@@ -283,63 +283,63 @@ public class gui extends JFrame {
 
       try {
          logoImage = getScaledImage(ImageIO.read(new BufferedInputStream(sourceimage)), FrameWidth, FrameHeight);
-      } catch (IOException e) {
+  ***REMOVED*** catch (IOException e) {
          e.printStackTrace();
-      }
+  ***REMOVED***
 
 
       try {
          sourceimages.close();
-      } catch (IOException e) {
+  ***REMOVED*** catch (IOException e) {
          e.printStackTrace();
-      }
+  ***REMOVED***
          try{
          logoLabel.setIcon(new ImageIcon(logoImage));
          this.add(logoLabel, BorderLayout.NORTH);
             logoLabel.setVisible(true);
             logoLabel.setOpaque(true);
             this.pack();
-         }
+ ***REMOVED***
          catch(NullPointerException e)
       {   e.printStackTrace();
-      }
-      */
+  ***REMOVED***
+      ***REMOVED***
       logoLabel.setIcon(new ImageIcon(getClass().getResource("intro/logo.png")));
       this.add(logoLabel, BorderLayout.NORTH);
 
 
-   }
+   ***REMOVED***
    public void BufferLoading() {
       new Thread() {
                   public void run() {
                      sourceimage = new InputStream() {
                         @Override
                         public int read() throws IOException {
-                           return 0;
-                        }
-            };
+                       ***REMOVED***
+            ***REMOVED***
+***REMOVED***;
             for (int i = 0; i < 64; i++) {
                try {
                   if (i <= 9) {
                      sourceimage = this.getClass().getResourceAsStream("intro/Intro0" + i + ".jpg");
-                  } else if (i > 9) {
+      ***REMOVED*** else if (i > 9) {
                      sourceimage = this.getClass().getResourceAsStream("intro/Intro" + i + ".jpg");
-                  }
+      ***REMOVED***
 
                   images[i] = getScaledImage(ImageIO.read(new BufferedInputStream(sourceimage)), FrameWidth, FrameHeight);
-               } catch (IOException e) {
+   ***REMOVED*** catch (IOException e) {
                   e.printStackTrace();
-               }
-            }
+   ***REMOVED***
+***REMOVED***
             isBuffered = true;
             try {
                sourceimage.close();
-            } catch (IOException e) {
+***REMOVED*** catch (IOException e) {
                e.printStackTrace();
-            }
-         }
-      }.run();
-   }
+***REMOVED***
+ ***REMOVED***
+  ***REMOVED***.run();
+   ***REMOVED***
 
    public void initLoad() {
       this.removeAll();
@@ -353,16 +353,16 @@ public class gui extends JFrame {
 
          try {
             Thread.sleep(84);
-         } catch (InterruptedException e) {
+ ***REMOVED*** catch (InterruptedException e) {
             e.printStackTrace();
-         }
+ ***REMOVED***
 
-      }
+  ***REMOVED***
 this.remove(loadLabel);
       loadOptions();
-   }
+   ***REMOVED***
 
 
-}
+***REMOVED***
 
 
