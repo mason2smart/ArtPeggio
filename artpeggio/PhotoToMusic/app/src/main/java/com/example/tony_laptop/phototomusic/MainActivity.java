@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-***REMOVED***
+    }
     /*
     public void addListenerOnCamButton() {
         Button button = (Button) findViewById(R.id.button2);
@@ -25,21 +25,21 @@ public class MainActivity extends AppCompatActivity {
                 if (camIntent.resolveActivity(getPackageManager()) != null) {
                     startActivityForResult(camIntent, REQUEST_IMAGE_CAPTURE);
 
-    ***REMOVED***
-***REMOVED***
+                }
+            }
 
             void onActivityResult(int requestCode, int resultCode, Intent data) {
                 if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
                     Bundle extras = data.getExtras();
                     Bitmap imageBitmap = (Bitmap) extras.get("data");
                     mImageView.setImageBitmap(imageBitmap);
-    ***REMOVED***
-***REMOVED***
+                }
+            }
 
-***REMOVED***);
+        });
 
 
-***REMOVED******REMOVED***
+    }*/
 
     public void addListenerBtnRandom() {
         Button button = (Button) findViewById(R.id.button4);
@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 Intent processImage = new Intent();
-***REMOVED***
+            }
 
-***REMOVED***);
-***REMOVED***
-***REMOVED***
+        });
+    }
+}

@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by Tony_Laptop on 9/16/2017.
- ***REMOVED***
+ */
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -17,5 +17,5 @@ public class SplashActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
-***REMOVED***
-***REMOVED***
+    }
+}
